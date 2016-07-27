@@ -37,7 +37,7 @@ RUN echo 'export PATH=$ORACLE_HOME/bin:$PATH' >> /etc/bash.bashrc
 RUN echo 'export ORACLE_SID=XE' >> /etc/bash.bashrc
 
 # Oracle data volume
-VOLUME /usr/lib/oracle/xe/oradata/XE
+VOLUME /u01/app/oracle/oradata/XE
 # Oracle volume for init SQL scripts
 VOLUME /etc/entrypoint-initdb.d
 
